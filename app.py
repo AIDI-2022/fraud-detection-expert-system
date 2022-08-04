@@ -66,7 +66,7 @@ def predict():
 
     prediction = rbso.predict(inference_rules)
 
-    return 'The Transaction is <b> {} </b>'.format(prediction[0])
+    return 'The Transaction is <b> {} </b>'.format(class_names[prediction[0]])
 
 if __name__ == "__main__":
     app.run(debug=True)
